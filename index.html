@@ -26,7 +26,7 @@
 <h2>Fondants et croustillants</h2>
 <img class="avatar" src="images/logo.png" width="300px" alt="logo">
 <br>
-<a href="https://www.marmiton.org/recettes/recette_cookies-maison_86989.aspx" class="btn-pink">
+<a href="https://www.marmiton.org/recettes/recette_cookies-maison_86989.aspx"
 	En savoir plus</a> 
 
 
@@ -59,7 +59,15 @@
   </div>
 </div>
 
+<a href="about.html">Ma deuxième page</a>
 
+<a href="about.html" class="btn-pink">À mon sujet</a>
+
+<a href="mail to:luna.berriex@efap.com" class="btn-pink" target="_blank">Envoyez moi un mail !</a>
+
+<a href="tel:0666891698" class="btn-pink">Appelle moi !</a>
+
+<a href="#productions" class="btn-pink">Vos productions</a>
 
 <div class="navbar">
 	<img src="images/logo.png" class="logo">
@@ -82,7 +90,7 @@
 
 	<!-- Button trigger modal -->
 <button type="button" class="btn btn-pink" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Infos sur moi
 </button>
 
 <!-- Modal -->
@@ -148,6 +156,9 @@
 </div>
 </div>
 
+
+<div id="productions"></div>
+
 </div class="yellow-frame">>
 
 <a href="https://www.marmiton.org/recettes/recette_cookies-maison_86989.aspx" target="_blank">Mon 1er lien</a>
@@ -203,6 +214,19 @@
 
 </div>
 
+<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+  Votre navigateur ne gère pas l'élément <code>video</code>.
+</video>
+
+
+	<div class="machine">
+	  <div id="belt-container" class="belt-container"></div>
+	</div>
+
+<iframe width="966" height="543" src="https://www.youtube.com/embed/ssk5L-Vt98Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -220,6 +244,52 @@
   </div>
 </div>
 
+	<script>
+		
+	let beltCont = $("#belt-container");
+
+	for (let i = 1; i <= 150; i++) {
+	  let belt = $("<div />");
+	  let cake = $("<div />");
+	  let layerOne = $("<div />");
+	  let filling = $("<div />");
+	  let layerTwo = $("<div />");
+	  let topping = $("<div />");
+	  let candle = $("<div />");
+
+	  layerOne.css({
+	    backgroundColor: "hsl(" + Math.floor(Math.random() * i * 50) + ", 30%, 60%"
+	  });
+
+	  layerTwo.css({
+	    backgroundColor: "hsl(" + Math.floor(Math.random() * i * 50) + ", 60%, 35%"
+	  });
+
+	  topping.css({
+	    backgroundColor: "hsl(" + Math.floor(Math.random() * i * 25) + ", 50%, 50%"
+	  });
+
+	  belt.addClass("belt");
+	  cake.addClass("cake");
+	  layerOne.addClass("layer layer-1");
+	  filling.addClass("filling");
+	  layerTwo.addClass("layer layer-2");
+	  topping.addClass("layer topping");
+	  candle.addClass("candle");
+
+	  belt.css({
+	    left: 1 * i * 150
+	  });
+
+	  cake.append(layerOne, filling, layerTwo, topping, candle);
+	  belt.append(cake);
+
+	  beltCont.append(belt);
+	}
+
+
+
+	</script>
 
 
 </body>

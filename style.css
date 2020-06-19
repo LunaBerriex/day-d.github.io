@@ -146,24 +146,115 @@ h4{
 }
 
 
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
+body {
+  overflow-x: hidden;
 }
 
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+body {
+  background-color: #093f56;
+  animation: bgDarken 10s linear;
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.machine {
+  position: relative;
+  margin-top: 20%;
+  border-top: 5px solid white;
+  border-bottom: 2px solid white;
+  height: 200px;
+  background-color: #aaa;
+  background-size: 15px 15px;
+  background-position: 0 0, 30px 30px;
+  width: 100%;
+}
+.machine .belt-container {
+  position: absolute;
+  left: -1500px;
+  animation: moveBelt 30s infinite linear;
+}
+.machine .belt {
+  position: absolute;
+  top: -10px;
+  height: 5px;
+  width: 100px;
+  background-color: black;
+}
+.machine .belt .cake .layer {
+  border-radius: 5px 5px 0 0;
+}
+.machine .belt .cake .layer-1 {
+  position: relative;
+  top: -25px;
+  left: 12.5px;
+  border-radius: 0;
+  height: 25px;
+  width: 75%;
+}
+.machine .belt .cake .filling {
+  position: relative;
+  top: -50px;
+  left: 12.5px;
+  height: 3px;
+  width: 75%;
+  background-color: white;
+}
+.machine .belt .cake .layer-2 {
+  position: relative;
+  top: -73px;
+  left: 12.5px;
+  height: 20px;
+  width: 75%;
+}
+.machine .belt .cake .topping {
+  position: relative;
+  top: -98px;
+  left: 20px;
+  height: 5px;
+  width: 60%;
+}
+.machine .belt .cake .candle {
+  position: absolute;
+  top: -65px;
+  left: calc(50% - 12.5px);
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  transform: rotate(90deg);
+}
+.machine .belt .cake .candle:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -10px;
+  right: 25px;
+  height: 5px;
+  background-color: orange;
+  box-shadow: 0 0 140px 15px yellow;
+  animation: candleFlicker 3s linear infinite;
+}
+
+@keyframes moveBelt {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -1500px;
+  }
+}
+@keyframes candleFlicker {
+  0% {
+    box-shadow: none;
+  }
+  5% {
+    box-shadow: 0 0 75px 10px yellow;
+  }
+  15% {
+    box-shadow: none;
+  }
+  18% {
+    box-shadow: 0 0 75px 10px yellow;
+  }
+  100% {
+    box-shadow: 0 0 140px 15px yellow;
+  }
 }
 
