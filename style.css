@@ -1,159 +1,141 @@
-body {
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: arial;
-  margin: 0px;
+body{
+	font-family: arial;
+	text-align: center;
+	background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 32px;
+/*Pour le titre principal:
+- La couleur en rose
+- Taille de police à 34px*/
+h1{
+	font-size: 34px;
+background: #FFDAB9;
+font-family: 'Lobster', cursive;
 }
 
-h2, h3, h4 {
-  font-family: 'Pacifico', cursive;
-  font-size: 28px;
+.color-lightpink {
+	color: lightpink;
+}
+/*Pour les sous titres:
+- La couleur en rose pale
+- Taille de police à 24px
+*/
+h2, h3, h4{
+	color: pink;
+	font-size: 24px;
 }
 
-a, a:hover {
-  text-decoration: none;
+/*h3{
+	color: pink;
+	font-size: 24px;
 }
+h4{
+	color: pink;
+	font-size: 24px;
+}*/
 
-p, ul, ol {
-  font-size: 20px;
-}
 
-.cadre {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-  margin: 20px 100px;
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
-}
-
-.avatar {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 5px 5px 10px grey;
-}
-
-.text-center {
-  text-align: center;
-}
+/*ul, ol, h4 {
+	text-align: left;
+}*/
 
 .text-left {
-  text-align: left;
-}
-
-.color-green {
-  color: #458D2E;
-}
-
-.btn-pink {
-  display: inline-block;
-  color: white;
-  background: #C86472;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.btn-pink:hover {
-  color: white;
-  opacity: 0.8;
+	text-align: left;
 }
 
 
-.logo {
-  height: 60px;
-  margin: 5px;
+.avatar {
+	width: 300px;
+	height: 300px;
+	object-fit: cover; 
 }
+
+.yellow-frame {
+	background: #FFDAB9;
+	border: 5px solid gold;
+	border-radius: 30px;
+	margin: 100px;
+	padding: 50px;
+	box-shadow: 5px 5px 10px gold;
+}
+
+.color-lightpink {
+	color: lightpink;
+}
+
+
+.prod {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #E2F3DC;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #E2F3DC;
 }
 
-.links {
-  display: flex;
-  justify-content: flex-end;
+.links{
+	display: flex;
+	justify-content: flex-end;
 }
 
-.link {
-  margin: 10px 30px;
-  color: #9F3442;
+.link{
+	margin: 10px 30px;
+	color: #9F3442
 }
 
 .link:hover {
-  color: #458D2E;
+	color: #458D2E;
+}
+.btn-pink {
+	display: inline-block;
+	margin: 15px;
+	background: #9A334F;
+	border-radius: 15px;
+	padding: 15px;
+	color: white;
+	font-weight: bold;
+	border: 5px solid gold;
 }
 
+.btn-pink:hover {
+	background: pink;
+}
 
 .line-transparent {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+	/*height: 400px;*/
+	background: gold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.line-light {
-  height: 5px;
-  width: 20%;
-  background: #EE9CA7;
+.line-dark {
+	height: 10px;
+	width: 50%;
+	background: #9A334F;
 }
 
 .line-medium {
-  height: 5px;
-  width: 30%;
-  background: #C86472;
+	height: 10px;
+	width: 30%;
+	background: #E7698B;
 }
 
-.line-hard {
-  height: 5px;
-  width: 50%;
-  background: #9F3442;
+.line-light {
+	height: 10px;
+	width: 20%;
+	background: #
+	FA86A5;
 }
 
-
-.horizontal-position {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 100px;
+.two-sections {
+	display: flex;
 }
-
-.cadre-preparartion {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-  margin: 0px 0px 0px 10px;
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
-}
-
-.cadre-ingredients {
-  background: #E2F3DC;
-  border: 3px solid #C1E6B6;
-  margin: 0px 10px 0px 0px;
-  padding: 30px 70px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
-  width: 1000px;
-}
-
-.card-img-top {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.socials {
-  font-size: 40px;
-  color: green;
-}
-
